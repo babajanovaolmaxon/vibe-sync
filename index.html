@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Life & Productivity</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1 class="main-title">VibeSync: Unumdorlik Tizimi</h1>
+
+    <div class="container">
+        <!-- 1-Karta: Tezkor Eslatmalar (Mini To-Do) -->
+        <div class="card">
+            <h2>Tezkor Rejalar</h2>
+            <p>Bugun bajarishingiz kerak bo'lgan eng muhim 3 ta vazifani kiriting va tekshiring.</p>
+            
+            <input type="text" id="todo1" placeholder="1-vazifa (masalan: Dars qilish)">
+            <input type="text" id="todo2" placeholder="2-vazifa (masalan: Kitob o'qish)">
+            <input type="text" id="todo3" placeholder="3-vazifa (masalan: Sport)">
+            
+            <button onclick="tekshirRejalar()">Rejani tahlil qilish</button>
+            <div id="todoNatija" class="result"></div>
+        </div>
+
+        <!-- 2-Karta: Haftalik Motivatsiya va Reja -->
+        <div class="card">
+            <h2>Kunlik Energiya Doskasi</h2>
+            <p>Bugun haftaning qaysi kuni ekanligiga qarab, tizim sizga maxsus reja va status beradi.</p>
+            
+            <select id="haftaKuni">
+                <option value="">Kunni tanlang...</option>
+                <option value="dushanba">Dushanba</option>
+                <option value="chorshanba">Chorshanba</option>
+                <option value="juma">Juma</option>
+                <option value="shanba">Shanba / Yakshanba</option>
+            </select>
+            
+            <button onclick="kunlikMaslahat()">Statusni ko'rish</button>
+            <div id="motivatsiyaNatija" class="result"></div>
+        </div>
+
+        <!-- 3-Karta: Matn Analizatori -->
+        <div class="card">
+            <h2>Matn va Kontent Analizatori</h2>
+            <p>Yozgan matningizda nechta belgi borligini va unda taqiqlangan so'zlar bor-yo'qligini aniqlaydi.</p>
+            
+            <input type="text" id="matnInput" placeholder="Biron bir gap yoki iqtibos yozing...">
+            
+            <button onclick="analizMatn()">Matnni tekshirish</button>
+            <div id="matnNatija" class="result"></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
