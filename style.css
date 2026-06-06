@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #064e3b 0%, #0f172a 100%);
+    min-height: 100vh;
+    padding: 40px 20px;
+    color: #f8fafc;
+}
+
+.main-title {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    color: #34d399;
+    text-shadow: 0 4px 12px rgba(52, 211, 153, 0.2);
+    font-weight: 700;
+}
+
+.container {
+    max-width: 1150px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: rgba(30, 41, 59, 0.6);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(52, 211, 153, 0.2);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    border-color: #34d399;
+    box-shadow: 0 20px 40px rgba(52, 211, 153, 0.1);
+}
+
+h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #e2e8f0;
+}
+
+p {
+    font-size: 14px;
+    color: #94a3b8;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    background: #1e293b;
+    border: 2px solid #334155;
+    border-radius: 10px;
+    color: white;
+    font-size: 14px;
+    margin-bottom: 12px;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus, select:focus {
+    border-color: #34d399;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, #059669 0%, #10b981 100%);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: auto;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(16, 185, 129, 0.4);
+}
+
+.result {
+    margin-top: 20px;
+    padding: 14px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: left;
+    display: none;
+    line-height: 1.5;
+}
+
+.normal { background: rgba(52, 211, 153, 0.15); border: 1px solid #34d399; color: #34d399; }
+.alert { background: rgba(245, 158, 11 0.15); border: 1px solid #f59e0b; color: #fbbf24; }
+.error { background: rgba(239, 68, 68, 0.15); border: 1px solid #ef4444; color: #fca5a5; }
